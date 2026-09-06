@@ -4,8 +4,8 @@
   change checkoutMode from "sandbox" to "live".
 */
 window.BOTD_SITE_CONFIG = Object.freeze({
-  checkoutUrl: "https://buy.stripe.com/test_fZu6oH2Tt8KcaOz6mx00000",
-  checkoutMode: "sandbox",
+  checkoutUrl: "https://buy.stripe.com/00w7sEdVwgRf50ldnx0x201",
+  checkoutMode: "live",
   appUrl: "https://edw00rd.github.io/hockey-coaching-aid/",
   supportEmail: "support@botdhockey.com"
 });
