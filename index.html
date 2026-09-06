@@ -3,34 +3,50 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FENRIR LLC | Build Boldly</title>
-  <meta name="description" content="FENRIR LLC builds bold, durable digital products that turn complex ideas into clear action.">
+  <title>B.O.T.D. Hockey Coaching Aid | Build, Edit & Replay Every Play</title>
+  <meta name="description" content="B.O.T.D. is hockey coaching software for mapping player routes, directing puck actions, editing timing, and replaying the complete play on full or half ice.">
   <link rel="canonical" href="https://botdhockey.com/">
-  <meta property="og:title" content="FENRIR LLC | Build Boldly">
-  <meta property="og:description" content="Independent product development built with discipline, integrity, and purpose.">
+  <meta name="theme-color" content="#07111f">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://botdhockey.com/">
-  <meta property="og:image" content="https://botdhockey.com/assets/fenrir-logo-blue.png">
+  <meta property="og:title" content="B.O.T.D. Hockey Coaching Aid">
+  <meta property="og:description" content="Draw the play. Edit the moment. Coach the decision.">
+  <meta property="og:image" content="https://botdhockey.com/assets/social-card.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/icon-192.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/assets/site.css">
+  <script src="/assets/config.js" defer></script>
   <script src="/assets/site.js" defer></script>
 </head>
-<body data-signal="blue">
+<body>
 <a class="skip-link" href="#main">Skip to content</a>
+
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="/" aria-label="FENRIR LLC home">
-      <img src="/assets/favicon.png" alt="">
-      <span>FENRIR LLC</span>
+    <a class="product-brand" href="/" aria-label="B.O.T.D. Hockey home">
+      <img src="/assets/botd-dog-tag.png" alt="">
+      <span class="product-brand-copy">
+        <strong>B.O.T.D. HOCKEY</strong>
+        <small>Single Timeline Director</small>
+      </span>
     </a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle aria-label="Open navigation">☰</button>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle aria-label="Open navigation"><span></span></button>
+
     <nav class="site-nav" id="site-nav" data-nav aria-label="Primary navigation">
-      <a href="#mission">Mission</a>
-      <a href="#work">Work</a>
-      <a href="#principles">Principles</a>
-      <a href="#contact">Contact</a>
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="mailto:support@botdhockey.com">Support</a>
     </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-outline btn-small" href="/subscribe/">View plan</a>
+      <a class="btn btn-primary btn-small" href="/subscribe/">Get Coach Pro</a>
+    </div>
   </div>
 </header>
 
@@ -38,100 +54,241 @@
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-copy reveal">
-        <p class="eyebrow">Independent company · Washington</p>
-        <h1>Build with <span class="gradient-word">teeth.</span><br>Lead with purpose.</h1>
-        <p class="lead">FENRIR creates durable digital products for people who need clarity, control, and the confidence to act.</p>
-        <div class="actions">
-          <a class="btn btn-primary" href="#work">Explore our work</a>
-          <a class="btn btn-ghost" href="mailto:fenrir@botdhockey.com">Contact FENRIR</a>
+        <div class="kicker">Built for coaches who teach movement</div>
+        <h1>Draw the play.<em>Edit the moment.</em></h1>
+        <p class="lead">B.O.T.D. turns the hockey whiteboard into an editable timeline. Map every player’s route, direct the puck, tune the timing, and replay the complete sequence.</p>
+        <div class="hero-actions">
+          <a class="btn btn-red btn-arrow" href="/subscribe/">Join Coach Pro</a>
+          <a class="btn btn-ghost" href="https://edw00rd.github.io/hockey-coaching-aid/" data-app-link rel="noopener">Open the web app</a>
+        </div>
+        <div class="hero-meta" aria-label="Product highlights">
+          <span>Runs in the browser</span>
+          <span>Built for iPad & desktop</span>
+          <span>Annual Coach Pro plan</span>
         </div>
       </div>
-      <div class="logo-stage reveal" aria-label="FENRIR logo presentation">
-        <span class="flare" aria-hidden="true"></span>
-        <img src="/assets/fenrir-logo-blue.png" alt="FENRIR LLC geometric wolf logo" data-hero-logo>
-        <div class="signal-switch" aria-label="Logo signal color">
-          <button type="button" aria-pressed="true" data-signal-button="blue">Blue</button>
-          <button type="button" aria-pressed="false" data-signal-button="orange">Orange</button>
+
+      <div class="product-visual reveal" aria-label="B.O.T.D. Hockey Coaching Aid interface">
+        <img class="dog-tag-float" src="/assets/botd-dog-tag.png" alt="B.O.T.D. dog tag">
+        <div class="app-window">
+          <div class="app-window-top" aria-hidden="true"><i></i><i></i><i></i></div>
+          <img src="/assets/app-preview.webp" alt="B.O.T.D. Hockey Coaching Aid showing player routes and a synchronized timeline">
         </div>
+        <div class="visual-badge one"><strong>Edit from any frame</strong><span>Replace one player’s future without resetting the play.</span></div>
+        <div class="visual-badge two"><strong>One synchronized timeline</strong><span>Players, puck, glow, and telestration stay together.</span></div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="mission">
+  <div class="trust-strip">
+    <div class="container trust-grid">
+      <div class="trust-item"><strong>Independent routes</strong><span>Every player follows their own path.</span></div>
+      <div class="trust-item"><strong>Frame-level edits</strong><span>Pause, redirect, and keep the past intact.</span></div>
+      <div class="trust-item"><strong>Puck direction</strong><span>Passes, shots, power, and board behavior.</span></div>
+      <div class="trust-item"><strong>Coaching playback</strong><span>Show the whole decision—not a static diagram.</span></div>
+    </div>
+  </div>
+
+  <section class="section section-ice" id="mission">
+    <div class="container mission-grid">
+      <div class="mission-copy reveal">
+        <p class="eyebrow">Product mission</p>
+        <h2>Make every hockey idea easier to see.</h2>
+        <p>Static arrows show where a play might go. B.O.T.D. shows when it happens, how it changes, and what every player is doing at the same moment.</p>
+      </div>
+      <blockquote class="mission-statement reveal">
+        <p>B.O.T.D. exists to make hockey instruction easier to see, easier to revise, and easier to share—so coaches spend less time explaining static diagrams and more time teaching decisions, timing, and movement.</p>
+        <footer>B.O.T.D. Hockey Coaching Aid</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="section" id="features">
     <div class="container">
-      <p class="eyebrow reveal">Mission</p>
-      <div class="mission-panel reveal">
-        <blockquote>FENRIR LLC builds bold, durable digital products that turn complex ideas into clear action. We create with discipline, serve with integrity, and use responsible growth to strengthen the communities and wild places that make the future worth building.</blockquote>
+      <header class="section-head center reveal">
+        <p class="eyebrow">Built around the play</p>
+        <h2>A coaching board that understands time.</h2>
+        <p>Every control is designed to help a coach move from an idea to a playable sequence without burying the rink under software.</p>
+      </header>
+
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <span class="feature-number">01</span>
+          <h3>One route per player</h3>
+          <p>Trace movement for each skater independently, then watch the full unit execute together on a synchronized timeline.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-number">02</span>
+          <h3>Change any moment</h3>
+          <p>Pause the play, select one player, and redraw only what happens from that frame forward—without teleporting or resetting everyone else.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-number">03</span>
+          <h3>Direct the puck</h3>
+          <p>Build passes to players or space, aim shots, adjust power and travel time, and demonstrate rims, banks, and rebounds.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-number">04</span>
+          <h3>Tune the timing</h3>
+          <p>Drag action-duration controls to change skating and puck speed while preserving the geometry of the route.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-number">05</span>
+          <h3>Teach with emphasis</h3>
+          <p>Add timed glow, blink, marker, and eraser actions so visual instruction becomes part of the playback.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-number">06</span>
+          <h3>See the same ice your way</h3>
+          <p>Work in full-ice or camera-based half-ice views while keeping players, goalies, routes, and puck locations on the same physical surface.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <section class="section" id="principles">
-    <div class="container">
-      <div class="section-header reveal">
-        <p class="eyebrow">Operating principles</p>
-        <h2>Strength without noise.</h2>
-        <p class="section-copy">The work should feel powerful because it is useful—not because it is complicated.</p>
+  <section class="section section-ice">
+    <div class="container showcase">
+      <div class="showcase-window reveal">
+        <img src="/assets/app-preview.webp" alt="B.O.T.D. timeline editor with movement, pass, and shot clips">
       </div>
-      <div class="grid-3">
-        <article class="card reveal"><span class="number">01 / DISCIPLINE</span><h3>Make complexity legible.</h3><p>Reduce friction, expose the right controls at the right moment, and protect the user’s focus.</p></article>
-        <article class="card reveal"><span class="number">02 / INTEGRITY</span><h3>Build what we can stand behind.</h3><p>Favor clear promises, honest limits, durable systems, and respect for the people whose data we touch.</p></article>
-        <article class="card reveal"><span class="number">03 / RANGE</span><h3>Leave room to grow.</h3><p>Create products that can evolve beyond their first use without losing the clarity that made them valuable.</p></article>
+      <div class="showcase-copy reveal">
+        <p class="eyebrow">Rink-first interface</p>
+        <h2>The controls appear when the play needs them.</h2>
+        <p>Select a player to move or bench them. Select the puck to pass or shoot. Expand the timeline only when you need precision.</p>
+        <ul class="check-list">
+          <li>Two complete, collapsible team benches</li>
+          <li>Floating player and puck actions on the ice</li>
+          <li>Playback controls available without opening the timeline</li>
+          <li>Pinch-to-zoom and Apple Pencil-friendly interaction</li>
+          <li>Play options and independent puck routes</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <section class="section" id="work">
+  <section class="section section-dark" id="how-it-works">
     <div class="container">
-      <div class="section-header reveal">
-        <p class="eyebrow">Flagship product</p>
-        <h2>B.O.T.D. Hockey Coaching Aid</h2>
+      <header class="section-head reveal">
+        <p class="eyebrow">How it works</p>
+        <h2>From clean ice to complete play.</h2>
+        <p>Build the sequence in three direct steps, then refine it until the timing communicates exactly what you want.</p>
+      </header>
+      <div class="steps">
+        <article class="step reveal"><strong>STEP 01</strong><h3>Set the ice</h3><p>Load the players, goalies, and staff you need from the two team benches. Hide the benches when the setup is complete.</p></article>
+        <article class="step reveal"><strong>STEP 02</strong><h3>Trace the decisions</h3><p>Draw each player’s movement, then add passes, shots, possession, and visual coaching cues.</p></article>
+        <article class="step reveal"><strong>STEP 03</strong><h3>Play, pause, revise</h3><p>Watch the sequence, stop at the exact frame that needs work, and redraw only the future you want to change.</p></article>
       </div>
-      <article class="product-card reveal">
-        <div class="product-art"><img src="/assets/botd-dog-tag.png" alt="B.O.T.D. dog-tag product emblem"></div>
-        <div>
-          <h3>Turn the whiteboard into a timeline.</h3>
-          <p>B.O.T.D. gives hockey coaches a rink-first workspace for mapping every player’s route, directing passes and shots, editing timing, and replaying the complete sequence.</p>
-          <div class="pill-row" aria-label="Product capabilities">
-            <span class="pill">Independent player timelines</span>
-            <span class="pill">Puck routes</span>
-            <span class="pill">Telestration</span>
-            <span class="pill">Full & half ice</span>
-          </div>
-          <a class="btn btn-primary" href="https://edw00rd.github.io/hockey-coaching-aid/" rel="noopener">Open B.O.T.D.</a>
+    </div>
+  </section>
+
+  <section class="section" id="pricing">
+    <div class="container pricing-grid">
+      <div class="pricing-copy reveal">
+        <p class="eyebrow">Coach Pro</p>
+        <h2>One plan. The full coaching board.</h2>
+        <p>Coach Pro includes the complete route, puck, timeline, telestration, and visual-emphasis toolset. Promotion codes can be entered at secure checkout.</p>
+        <div class="promo-note">Founding and friend promotion codes may be available</div>
+      </div>
+
+      <article class="price-card reveal" aria-label="B.O.T.D. Coach Pro annual subscription">
+        <div class="price-head">
+          <div><p class="eyebrow">Annual subscription</p><h3 class="price-name">B.O.T.D. Coach Pro</h3></div>
+          <img src="/assets/botd-dog-tag.png" alt="">
         </div>
+        <div class="price"><strong>$79</strong><span>USD / year</span></div>
+        <p class="price-note">Plus applicable tax. Valid promotion codes are applied at Stripe checkout.</p>
+        <ul class="check-list">
+          <li>Complete player and puck timeline tools</li>
+          <li>Full-ice and half-ice coaching views</li>
+          <li>Timed telestration, glow, and blink</li>
+          <li>Ongoing product updates during the subscription</li>
+          <li>Direct support at support@botdhockey.com</li>
+        </ul>
+        <a class="btn btn-red btn-arrow" href="/subscribe/">Review plan & continue</a>
+        <p class="price-disclosure">Renews annually until canceled. Initial purchases may be refunded within 14 days under the <a href="/refunds/">Refund Policy</a>.</p>
+        <p class="price-disclosure" data-sandbox-only><strong>Testing notice:</strong> the included checkout link is currently a Stripe sandbox link and cannot accept a real payment.</p>
       </article>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container statement reveal">
-      <strong>Responsible growth</strong>
-      <p>FENRIR is built to create more than software. As the company grows, part of that growth will be directed toward stronger communities and the conservation of land and wild places.</p>
+  <section class="section section-ice" id="faq">
+    <div class="container">
+      <header class="section-head center reveal">
+        <p class="eyebrow">Questions</p>
+        <h2>Before you step onto the ice.</h2>
+      </header>
+      <div class="faq-list reveal">
+        <details>
+          <summary>What devices does B.O.T.D. support?</summary>
+          <div>B.O.T.D. runs in a modern web browser and is designed for desktop and iPad workflows, including touch and Apple Pencil-style input. Browser and device behavior can vary, so review important plays before a practice or presentation.</div>
+        </details>
+        <details>
+          <summary>Can I change one player without rebuilding the entire play?</summary>
+          <div>Yes. Pause at the frame where the decision changes, select that player, and trace a new route. The route before the playhead remains intact, while only that player’s future is replaced.</div>
+        </details>
+        <details>
+          <summary>How are promotion codes handled?</summary>
+          <div>Valid promotion codes can be entered on the Stripe-hosted checkout page. A promotional first-year amount may differ from the standard annual renewal price, which is disclosed during checkout.</div>
+        </details>
+        <details>
+          <summary>Can I cancel or request a refund?</summary>
+          <div>You may cancel future renewal at any time. Initial purchases may be eligible for a refund when requested within 14 calendar days. Review the <a href="/refunds/">Refund and Cancellation Policy</a> for details.</div>
+        </details>
+        <details>
+          <summary>Is the off-side indicator an official ruling tool?</summary>
+          <div>No. It is an instructional visualization aid based on simplified player and puck representations. Actual rulings depend on the applicable rulebook, skate position, possession, timing, and official judgment.</div>
+        </details>
+        <details>
+          <summary>Who owns and operates B.O.T.D.?</summary>
+          <div>B.O.T.D. Hockey Coaching Aid is owned and operated by FENRIR LLC, a Washington limited liability company. Product support is available at <a href="mailto:support@botdhockey.com">support@botdhockey.com</a>.</div>
+        </details>
+      </div>
     </div>
   </section>
 
-  <section class="section" id="contact">
-    <div class="container contact-panel reveal">
-      <div><p class="eyebrow">Contact</p><h2>Ready to build?</h2><p>Product questions, partnerships, and customer support begin here.</p></div>
-      <a class="btn btn-primary" href="mailto:fenrir@botdhockey.com">fenrir@botdhockey.com</a>
+  <section class="section section-tight">
+    <div class="container final-cta reveal">
+      <div class="final-cta-content">
+        <p class="eyebrow">Build the whole decision</p>
+        <h2>Stop explaining a moving play with a frozen picture.</h2>
+        <p>Give every player a route, give every action a time, and show the sequence the way you see it.</p>
+        <div class="hero-actions">
+          <a class="btn btn-red btn-arrow" href="/subscribe/">Get B.O.T.D. Coach Pro</a>
+          <a class="btn btn-ghost" href="mailto:support@botdhockey.com">Ask a question</a>
+        </div>
+      </div>
     </div>
   </section>
 </main>
 
 <footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <strong>FENRIR LLC</strong>
-      <p class="footer-small">B.O.T.D. Hockey Coaching Aid is a product of FENRIR LLC, a Washington limited liability company.</p>
-      <p class="footer-small">© <span data-year></span> FENRIR LLC. All rights reserved.</p>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-product">
+        <img src="/assets/botd-dog-tag.png" alt="B.O.T.D. dog tag">
+        <div><strong>B.O.T.D. Hockey Coaching Aid</strong><span>Single Timeline Director</span></div>
+      </div>
+      <div class="footer-column">
+        <strong>Product</strong>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="/subscribe/">Subscribe</a>
+        <a href="https://edw00rd.github.io/hockey-coaching-aid/" data-app-link rel="noopener">Open web app</a>
+      </div>
+      <div class="footer-column">
+        <strong>Support & legal</strong>
+        <a href="mailto:support@botdhockey.com" data-support-email>support@botdhockey.com</a>
+        <a href="/terms/">Terms of Service</a>
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/refunds/">Refunds & cancellation</a>
+      </div>
     </div>
-    <nav class="footer-links" aria-label="Legal">
-      <a href="/terms/">Terms</a>
-      <a href="/privacy/">Privacy</a>
-      <a href="/refunds/">Refunds & cancellation</a>
-      <a href="mailto:support@botdhockey.com">Support</a>
-    </nav>
+
+    <div class="owner-bar">
+      <img src="/assets/fenrir-owner-mark-small.png" alt="FENRIR LLC">
+      <p>B.O.T.D. Hockey Coaching Aid is owned and operated by FENRIR LLC, a Washington limited liability company.</p>
+      <p class="copyright">© <span data-year></span> FENRIR LLC. All rights reserved.</p>
+    </div>
   </div>
 </footer>
 </body>

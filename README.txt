@@ -1,53 +1,72 @@
-FENRIR LLC WEBSITE + PRODUCT POLICY PAGES
-=========================================
+B.O.T.D. HOCKEY PRODUCT WEBSITE
+================================
+
+Purpose
+-------
+This GitHub Pages package presents B.O.T.D. Hockey Coaching Aid as the product
+sold through botdhockey.com. FENRIR LLC appears as the product owner/operator
+in the footer and legal pages rather than as the primary website brand.
 
 Included routes
 ---------------
-/
-/terms/
-/privacy/
-/refunds/
+/                    Product homepage
+/subscribe/          Coach Pro plan and Stripe checkout bridge
+/terms/              Terms of Service
+/privacy/            Privacy Policy
+/refunds/            Refund and Cancellation Policy
+
+Current checkout configuration
+------------------------------
+The included Stripe URL is a SANDBOX/TEST link:
+https://buy.stripe.com/test_fZu6oH2Tt8KcaOz6mx00000
+
+The site clearly labels test mode and cannot accept a real payment through that
+URL. Before public launch, edit assets/config.js:
+
+  checkoutUrl: "YOUR_LIVE_STRIPE_PAYMENT_LINK",
+  checkoutMode: "live",
+
+This is the only file that needs to change to replace the checkout URL and hide
+the sandbox notices. Confirm that the live link has automatic tax, customer-name
+collection, promotion codes, annual renewal disclosure, and the correct product.
+
+The application URL is also centralized in assets/config.js:
+
+  appUrl: "https://edw00rd.github.io/hockey-coaching-aid/",
 
 Deployment to GitHub Pages
 --------------------------
-1. Download and extract the ZIP.
-2. Upload the extracted contents directly to the root of edw00rd/FENRIR.
-3. Preserve the assets, terms, privacy, and refunds folders.
-4. Commit the changes to main.
-5. GitHub Pages should remain configured as main / (root).
-6. Confirm that CNAME contains only: botdhockey.com
-7. Test all four URLs over HTTPS.
+1. Extract this ZIP.
+2. Upload the CONTENTS of the extracted folder to the root of edw00rd/FENRIR.
+3. Preserve the assets, subscribe, terms, privacy, and refunds folders.
+4. Commit the files to the main branch.
+5. In Settings > Pages, deploy from main / (root).
+6. Keep the CNAME file as botdhockey.com.
+7. Confirm HTTPS remains enforced.
 
-Important customization
------------------------
-The pages currently use fenrir@botdhockey.com as the contact address.
-Update that address in all HTML files if a different support address should be used.
-
-The public policies are tailored launch drafts based on the current B.O.T.D.
-subscription plan discussed with FENRIR LLC. They are not a substitute for review
-by a qualified attorney familiar with Washington law, SaaS subscriptions, privacy,
-youth-player data, and the jurisdictions where the product will be sold.
-
-The current Privacy Policy states that much of the coaching application may store
-content locally in the browser. Update the policy before launching cloud storage,
-user accounts, analytics, advertising, or materially different data practices.
-
-Files
------
-index.html
-terms/index.html
-privacy/index.html
-refunds/index.html
-assets/site.css
-assets/site.js
-assets/fenrir-logo-blue.png
-assets/fenrir-logo-orange.png
-assets/fenrir-logo-grayscale.png
-assets/botd-dog-tag.png
-assets/favicon.png
-CNAME
+Expected root files
+-------------------
 .nojekyll
-robots.txt
-sitemap.xml
-site.webmanifest
+404.html
+CNAME
+Preview.png
 README.txt
+index.html
+robots.txt
+site.webmanifest
+sitemap.xml
+assets/
+privacy/
+refunds/
+subscribe/
+terms/
+
+Support address
+---------------
+support@botdhockey.com
+
+Legal review
+------------
+The included legal pages are tailored working drafts, not legal advice. Before
+broad commercial release, have them reviewed by counsel familiar with Washington
+subscription services, privacy, automatic renewal, and youth-related data.
