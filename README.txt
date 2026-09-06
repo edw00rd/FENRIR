@@ -1,11 +1,12 @@
-B.O.T.D. HOCKEY PRODUCT WEBSITE
-================================
+B.O.T.D. HOCKEY PLAYBOOK STUDIO WEBSITE
+========================================
 
 Purpose
 -------
-This GitHub Pages package presents B.O.T.D. Hockey Coaching Aid as the product
-sold through botdhockey.com. FENRIR LLC appears as the product owner/operator
-in the footer and legal pages rather than as the primary website brand.
+This GitHub Pages site presents B.O.T.D. Hockey Playbook Studio as the product
+sold through botdhockey.com. The core positioning covers animated plays, drills,
+reusable local playbooks, and export or sharing workflows. FENRIR LLC appears as
+the product owner and operator rather than as the primary product brand.
 
 Included routes
 ---------------
@@ -13,36 +14,29 @@ Included routes
 /subscribe/          Coach Pro plan and Stripe checkout bridge
 /terms/              Terms of Service
 /privacy/            Privacy Policy
-/refunds/            Refund and Cancellation Policy
+/refunds/             Refund and Cancellation Policy
 
-Current checkout configuration
-------------------------------
-The included Stripe URL is a SANDBOX/TEST link:
-https://buy.stripe.com/test_fZu6oH2Tt8KcaOz6mx00000
+Site configuration
+------------------
+Checkout, application, and support settings are centralized in assets/config.js:
 
-The site clearly labels test mode and cannot accept a real payment through that
-URL. Before public launch, edit assets/config.js:
+  checkoutUrl: "YOUR_STRIPE_PAYMENT_LINK",
+  checkoutMode: "sandbox" or "live",
+  appUrl: "YOUR_APPLICATION_URL",
+  supportEmail: "YOUR_SUPPORT_EMAIL",
 
-  checkoutUrl: "YOUR_LIVE_STRIPE_PAYMENT_LINK",
-  checkoutMode: "live",
-
-This is the only file that needs to change to replace the checkout URL and hide
-the sandbox notices. Confirm that the live link has automatic tax, customer-name
-collection, promotion codes, annual renewal disclosure, and the correct product.
-
-The application URL is also centralized in assets/config.js:
-
-  appUrl: "https://edw00rd.github.io/hockey-coaching-aid/",
+Confirm those values before launch. A sandbox checkout cannot accept a real
+payment. A live Stripe Payment Link should show the correct product, price,
+billing interval, tax treatment, promotion-code settings, and renewal terms.
 
 Deployment to GitHub Pages
 --------------------------
-1. Extract this ZIP.
-2. Upload the CONTENTS of the extracted folder to the root of edw00rd/FENRIR.
-3. Preserve the assets, subscribe, terms, privacy, and refunds folders.
-4. Commit the files to the main branch.
-5. In Settings > Pages, deploy from main / (root).
-6. Keep the CNAME file as botdhockey.com.
-7. Confirm HTTPS remains enforced.
+1. Keep index.html at the repository root.
+2. Preserve the assets, subscribe, terms, privacy, and refunds folders.
+3. Commit and push changes to the main branch.
+4. In Settings > Pages, deploy from main / (root).
+5. Keep CNAME configured for botdhockey.com.
+6. Confirm HTTPS remains enforced.
 
 Expected root files
 -------------------

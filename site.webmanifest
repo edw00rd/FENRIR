@@ -1,7 +1,7 @@
 {
-  "name": "B.O.T.D. Hockey Coaching Aid",
+  "name": "B.O.T.D. Hockey Playbook Studio",
   "short_name": "B.O.T.D.",
-  "description": "Hockey coaching software for building, editing, and replaying complete plays.",
+  "description": "Build animated hockey plays and drills, organize a reusable playbook, and export or share coaching sequences.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#07111f",
