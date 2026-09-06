@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Subscribe to B.O.T.D. Coach Pro | Playbook Studio</title>
-  <meta name="description" content="Review B.O.T.D. Coach Pro pricing for animated plays, drills, playbook organization, and sharing.">
+  <title>Choose a Coach Pro Plan | B.O.T.D. Hockey Playbook Studio</title>
+  <meta name="description" content="Choose monthly or annual B.O.T.D. Coach Pro billing for animated plays, drills, playbook organization, and sharing.">
   <meta name="robots" content="noindex,follow">
   <link rel="canonical" href="https://botdhockey.com/subscribe/">
   <meta name="theme-color" content="#07111f">
@@ -35,19 +35,59 @@
 
 <main id="main" class="subscribe-hero">
   <div class="container">
+    <div class="sandbox-banner" data-sandbox-only hidden>This checkout is connected to Stripe test mode. No real payment will be processed.</div>
 
     <div class="subscribe-grid">
-      <div class="subscribe-copy reveal">
+      <section class="subscribe-intro reveal">
         <p class="eyebrow">B.O.T.D. Coach Pro</p>
-        <h1>Bring every play and drill to life.</h1>
-        <p class="lead">Build, revise, organize, and share an animated hockey playbook with B.O.T.D. Coach Pro. Review the annual plan below, then continue to Stripe’s secure checkout.</p>
+        <h1>Choose how you build your playbook.</h1>
+        <p class="lead">Both billing options unlock the same complete Playbook Studio experience. Choose annual for the best value or monthly for a lower upfront commitment, then continue to Stripe's secure checkout.</p>
 
         <div class="offer-summary">
-          <div><strong>Annual billing</strong><span>$79 USD per year, plus applicable tax.</span></div>
-          <div><strong>Promotion codes</strong><span>Eligible discounts are entered at checkout.</span></div>
-          <div><strong>14-day refund window</strong><span>Initial purchases may qualify under the Refund Policy.</span></div>
+          <div><strong>Complete Coach Pro access</strong><span>Every play, drill, timeline, playbook, export, and sharing tool.</span></div>
+          <div><strong>Annual best value</strong><span>$79 per year—save $40.88 versus 12 monthly payments.</span></div>
+          <div><strong>Monthly flexibility</strong><span>$9.99 per month with the same complete feature set.</span></div>
         </div>
+      </section>
 
+      <aside class="checkout-card checkout-card-plans reveal" aria-label="Choose B.O.T.D. Coach Pro billing">
+        <div class="checkout-card-art"><img src="/assets/botd-dog-tag.png" alt="B.O.T.D. dog tag"></div>
+        <div class="checkout-card-body">
+          <div class="checkout-label" data-checkout-mode>Secure Stripe checkout</div>
+          <h2 class="checkout-card-heading">Choose your billing schedule</h2>
+          <p class="checkout-card-intro">Both options include the same complete Coach Pro access.</p>
+
+          <div class="checkout-plan-list">
+            <section class="checkout-plan checkout-plan-featured" id="annual" aria-labelledby="annual-plan-name">
+              <div class="checkout-plan-top">
+                <div><span class="checkout-plan-kicker">Annual</span><h3 id="annual-plan-name">Coach Pro Annual</h3></div>
+                <span class="plan-badge">Best value</span>
+              </div>
+              <div class="checkout-price"><strong>$79</strong><span>USD / year</span></div>
+              <p class="plan-savings">Save $40.88, or about 34%, compared with 12 monthly payments.</p>
+              <p class="price-note">$6.58 per month equivalent. Billed annually, plus applicable tax.</p>
+              <a class="btn btn-red btn-arrow" href="https://buy.stripe.com/00w7sEdVwgRf50ldnx0x201" data-checkout-plan="annual" rel="noopener">Choose annual checkout</a>
+              <p class="plan-renewal">Renews every 12 months until canceled.</p>
+            </section>
+
+            <section class="checkout-plan" id="monthly" aria-labelledby="monthly-plan-name">
+              <div class="checkout-plan-top">
+                <div><span class="checkout-plan-kicker">Monthly</span><h3 id="monthly-plan-name">Coach Pro Monthly</h3></div>
+              </div>
+              <div class="checkout-price"><strong>$9.99</strong><span>USD / month</span></div>
+              <p class="price-note">Lower upfront commitment with the same complete feature set, plus applicable tax.</p>
+              <a class="btn btn-outline-dark btn-arrow" href="https://buy.stripe.com/4gMeV618KbwVcsNgzJ0x202" data-checkout-plan="monthly" rel="noopener">Choose monthly checkout</a>
+              <p class="plan-renewal">Renews monthly until canceled.</p>
+            </section>
+          </div>
+
+          <div class="checkout-trust"><span>Payments handled by Stripe</span><span>14-day initial-purchase refund window</span></div>
+          <p class="checkout-legal">By choosing a plan, you agree to the <a href="/terms/">Terms</a> and acknowledge the <a href="/privacy/">Privacy Policy</a> and <a href="/refunds/">Refund Policy</a>.</p>
+          <p class="checkout-legal" data-sandbox-only hidden><strong>Test mode:</strong> use Stripe test payment details only.</p>
+        </div>
+      </aside>
+
+      <div class="subscribe-details-column reveal">
         <div class="subscribe-details">
           <h2>What Coach Pro includes</h2>
           <ul class="check-list">
@@ -64,12 +104,16 @@
           <h2>Checkout questions</h2>
           <div class="faq-list">
             <details>
+              <summary>Do both options include the same features?</summary>
+              <div>Yes. Monthly and annual billing both unlock the complete Coach Pro feature set. Only the price and renewal interval differ.</div>
+            </details>
+            <details>
               <summary>What will I be charged?</summary>
-              <div>The standard price is $79 USD per year plus applicable tax. A valid promotion code may reduce the initial charge. Stripe will show the amount due today and the future renewal amount before you subscribe.</div>
+              <div>The annual option is $79 USD per year. The monthly option is $9.99 USD per month. Applicable tax may be added. Stripe shows the amount due today and the recurring renewal amount before you subscribe.</div>
             </details>
             <details>
               <summary>Does the subscription renew?</summary>
-              <div>Yes. Coach Pro renews annually until canceled. Promotional pricing may apply only to the first year; the exact renewal amount is shown during checkout.</div>
+              <div>Yes. The option you choose renews automatically at its stated monthly or annual interval until canceled. Your Stripe checkout page and receipt confirm the applicable renewal terms.</div>
             </details>
             <details>
               <summary>How do I get access?</summary>
@@ -82,23 +126,6 @@
           </div>
         </div>
       </div>
-
-      <aside class="checkout-card reveal" aria-label="B.O.T.D. Coach Pro checkout summary">
-        <div class="checkout-card-art"><img src="/assets/botd-dog-tag.png" alt="B.O.T.D. dog tag"></div>
-        <div class="checkout-card-body">
-          <div class="checkout-label" data-checkout-mode>Secure live checkout</div>
-          <div class="checkout-price"><strong>$79</strong><span>USD / year</span></div>
-          <p class="price-note">Plus applicable tax. Promotion codes can be entered on the Stripe checkout page.</p>
-          <ul class="check-list">
-            <li>Complete Coach Pro feature set</li>
-            <li>Annual subscription</li>
-            <li>Secure Stripe-hosted checkout</li>
-          </ul>
-          <a class="btn btn-red btn-arrow" href="https://buy.stripe.com/00w7sEdVwgRf50ldnx0x201" data-checkout-link rel="noopener">Continue to secure checkout</a>
-          <div class="checkout-trust"><span>Payments handled by Stripe</span><span>Promotion codes accepted</span></div>
-          <p class="checkout-legal">By continuing, you agree to the <a href="/terms/">Terms</a> and acknowledge the <a href="/privacy/">Privacy Policy</a> and <a href="/refunds/">Refund Policy</a>.</p>
-        </div>
-      </aside>
     </div>
   </div>
 </main>
@@ -108,7 +135,7 @@
     <div class="footer-grid">
       <div class="footer-product"><img src="/assets/botd-dog-tag.png" alt=""><div><strong>B.O.T.D. Hockey Playbook Studio</strong><span>Owned and operated by FENRIR LLC</span></div></div>
       <div class="footer-column"><strong>Support</strong><a href="mailto:support@botdhockey.com" data-support-email>support@botdhockey.com</a><a href="/">Product homepage</a></div>
-      <div class="footer-column"><strong>Legal</strong><a href="/terms/">Terms of Service</a><a href="/privacy/">Privacy Policy</a><a href="/refunds/">Refunds & cancellation</a></div>
+      <div class="footer-column"><strong>Legal</strong><a href="/terms/">Terms of Service</a><a href="/privacy/">Privacy Policy</a><a href="/refunds/">Refunds &amp; cancellation</a></div>
     </div>
     <div class="owner-bar"><img src="/assets/fenrir-owner-mark-small.png" alt="FENRIR LLC"><p>B.O.T.D. Hockey Playbook Studio is owned and operated by FENRIR LLC, a Washington limited liability company.</p><p class="copyright">© <span data-year></span> FENRIR LLC.</p></div>
   </div>

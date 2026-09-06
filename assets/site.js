@@ -47,14 +47,21 @@
     if (config.appUrl) node.href = config.appUrl;
   });
 
-  document.querySelectorAll("[data-checkout-link]").forEach((node) => {
+  const checkoutUrls = config.checkoutUrls || {};
+  document.querySelectorAll("[data-checkout-plan]").forEach((node) => {
+    const plan = node.dataset.checkoutPlan;
+    const url = checkoutUrls[plan] || (plan === "annual" ? config.checkoutUrl : "");
+    if (url) node.href = url;
+  });
+
+  document.querySelectorAll("[data-checkout-link]:not([data-checkout-plan])").forEach((node) => {
     if (config.checkoutUrl) node.href = config.checkoutUrl;
   });
 
   const checkoutMode = config.checkoutMode === "live" ? "live" : "sandbox";
   document.documentElement.dataset.checkoutEnvironment = checkoutMode;
   document.querySelectorAll("[data-checkout-mode]").forEach((node) => {
-    node.textContent = checkoutMode === "live" ? "Secure live checkout" : "Stripe sandbox checkout";
+    node.textContent = checkoutMode === "live" ? "Secure Stripe checkout" : "Stripe sandbox checkout";
   });
   document.querySelectorAll("[data-sandbox-only]").forEach((node) => {
     node.hidden = checkoutMode === "live";

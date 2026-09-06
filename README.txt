@@ -11,7 +11,7 @@ the product owner and operator rather than as the primary product brand.
 Included routes
 ---------------
 /                    Product homepage
-/subscribe/          Coach Pro plan and Stripe checkout bridge
+/subscribe/          Coach Pro monthly and annual checkout options
 /terms/              Terms of Service
 /privacy/            Privacy Policy
 /refunds/             Refund and Cancellation Policy
@@ -20,14 +20,18 @@ Site configuration
 ------------------
 Checkout, application, and support settings are centralized in assets/config.js:
 
-  checkoutUrl: "YOUR_STRIPE_PAYMENT_LINK",
+  checkoutUrl: "ANNUAL_STRIPE_PAYMENT_LINK",  (legacy annual fallback)
+  checkoutUrls: {
+    annual: "ANNUAL_STRIPE_PAYMENT_LINK",
+    monthly: "MONTHLY_STRIPE_PAYMENT_LINK"
+  },
   checkoutMode: "sandbox" or "live",
   appUrl: "YOUR_APPLICATION_URL",
   supportEmail: "YOUR_SUPPORT_EMAIL",
 
-Confirm those values before launch. A sandbox checkout cannot accept a real
-payment. A live Stripe Payment Link should show the correct product, price,
-billing interval, tax treatment, promotion-code settings, and renewal terms.
+Confirm both payment links before launch. A sandbox checkout cannot accept a
+real payment. Each live Stripe Payment Link should show the correct product,
+price, billing interval, tax treatment, and renewal terms.
 
 Deployment to GitHub Pages
 --------------------------
