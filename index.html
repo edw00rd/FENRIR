@@ -2,108 +2,137 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#05070c">
-  <meta name="color-scheme" content="dark">
-  <title>FENRIR LLC — Forge What’s Next</title>
-  <meta name="description" content="FENRIR LLC is a veteran-founded product company building bold, durable digital tools from the Pacific Northwest.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FENRIR LLC | Build Boldly</title>
+  <meta name="description" content="FENRIR LLC builds bold, durable digital products that turn complex ideas into clear action.">
   <link rel="canonical" href="https://botdhockey.com/">
-  <link rel="icon" type="image/png" href="assets/fenrir-crest-blue.png">
-  <link rel="apple-touch-icon" href="assets/fenrir-crest-blue.png">
-  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:title" content="FENRIR LLC | Build Boldly">
+  <meta property="og:description" content="Independent product development built with discipline, integrity, and purpose.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="FENRIR LLC — Forge What’s Next">
-  <meta property="og:description" content="Bold, durable digital products built with discipline, clarity, and purpose.">
   <meta property="og:url" content="https://botdhockey.com/">
-  <meta property="og:image" content="https://botdhockey.com/assets/og-image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <style>
-    :root {
-      --bg:#05070c; --deep:#020409; --panel:#0d1420; --text:#f5f8fb;
-      --soft:#c8d2dd; --muted:#94a4b7; --accent:#57b8ff; --rgb:87,184,255;
-      --bright:#9adaff; --line:rgba(255,255,255,.12); --max:1240px;
-      --radius:28px; --ease:cubic-bezier(.22,1,.36,1);
-    }
-    body[data-signal="orange"]{--accent:#ff7926;--rgb:255,121,38;--bright:#ffc08f}
-    *,*::before,*::after{box-sizing:border-box}
-    html{scroll-behavior:smooth;background:var(--bg)}
-    body{margin:0;min-width:320px;overflow-x:hidden;color:var(--text);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5;background:radial-gradient(circle at 76% 12%,rgba(var(--rgb),.1),transparent 29rem),radial-gradient(circle at 10% 62%,rgba(65,95,210,.08),transparent 35rem),linear-gradient(180deg,var(--deep),var(--bg) 38%,#070b12);-webkit-font-smoothing:antialiased}
-    img{display:block;max-width:100%} a{color:inherit} button,a{-webkit-tap-highlight-color:transparent}
-    ::selection{background:rgba(var(--rgb),.28);color:#fff}
-    .shell{width:min(calc(100% - 2rem),var(--max));margin:auto}
-    .skip{position:fixed;left:1rem;top:-6rem;z-index:999;padding:.8rem 1rem;border-radius:.7rem;background:#fff;color:#06101a;font-weight:900;transition:.2s}.skip:focus{top:1rem}
-    #field{position:fixed;inset:0;width:100%;height:100%;z-index:-3;pointer-events:none;opacity:.68}
-    .grain{position:fixed;inset:0;z-index:50;pointer-events:none;opacity:.03;mix-blend-mode:soft-light;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
-
-    header{position:fixed;inset:0 0 auto;z-index:100;border-bottom:1px solid transparent;transition:.3s}header.scrolled{background:rgba(5,7,12,.8);border-color:var(--line);backdrop-filter:blur(20px) saturate(130%)}
-    .nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:1rem}
-    .brand{display:inline-flex;align-items:center;gap:.72rem;text-decoration:none;font-size:.84rem;font-weight:950;letter-spacing:.14em;white-space:nowrap}
-    .brand-icon{position:relative;width:44px;height:44px}.brand-icon img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 0 12px rgba(var(--rgb),.35));transition:opacity .35s}.brand-icon .orange{opacity:0}body[data-signal="orange"] .brand-icon .blue{opacity:0}body[data-signal="orange"] .brand-icon .orange{opacity:1}
-    nav{display:flex;gap:.2rem;padding:.28rem;border:1px solid var(--line);border-radius:999px;background:rgba(10,15,24,.5)}nav a{padding:.55rem .82rem;border-radius:999px;text-decoration:none;color:var(--muted);font-size:.75rem;font-weight:850;letter-spacing:.08em;text-transform:uppercase;transition:.2s}nav a:hover,nav a:focus-visible{color:#fff;background:rgba(var(--rgb),.12);outline:0}
-    .nav-actions{display:flex;gap:.55rem;align-items:center}.signal,.menu{min-height:42px;border:1px solid var(--line);border-radius:999px;background:rgba(12,18,28,.75);color:var(--soft);font:inherit;cursor:pointer;transition:.2s}.signal{display:flex;align-items:center;gap:.48rem;padding:0 .85rem;font-size:.68rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.dot{width:.62rem;aspect-ratio:1;border-radius:50%;background:var(--accent);box-shadow:0 0 14px rgba(var(--rgb),.9)}.signal:hover,.signal:focus-visible,.menu:hover,.menu:focus-visible{border-color:rgba(var(--rgb),.45);background:rgba(var(--rgb),.1);color:#fff;outline:0;transform:translateY(-1px)}.menu{display:none;width:44px;padding:0;place-items:center}.menu svg{width:20px}
-
-    .hero{position:relative;min-height:100svh;display:grid;align-items:center;padding:8.2rem 0 4.5rem;overflow:clip}.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:39%;background-image:linear-gradient(rgba(var(--rgb),.09) 1px,transparent 1px),linear-gradient(90deg,rgba(var(--rgb),.09) 1px,transparent 1px);background-size:58px 58px;mask-image:linear-gradient(transparent,#000 43%,transparent 98%);transform:perspective(550px) rotateX(67deg) scale(1.45) translateY(25%);transform-origin:bottom;opacity:.55}
-    .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(380px,.95fr);gap:clamp(2rem,6vw,6rem);align-items:center}
-    .eyebrow,.kicker{color:var(--bright);font-size:.72rem;font-weight:900;letter-spacing:.18em;text-transform:uppercase}.eyebrow{display:inline-flex;align-items:center;gap:.65rem;margin:0 0 1.1rem}.eyebrow::before{content:"";width:2.2rem;height:1px;background:var(--accent);box-shadow:0 0 14px rgba(var(--rgb),.8)}
-    h1,h2,h3,p{margin-top:0}.hero h1{margin:0 0 1.2rem;max-width:760px;font-size:clamp(3.4rem,7.1vw,7.25rem);line-height:.9;letter-spacing:-.068em;font-weight:950;text-transform:uppercase}.hero h1 span{display:block;color:transparent;background:linear-gradient(105deg,#fff 5%,var(--bright) 48%,var(--accent));background-clip:text;-webkit-background-clip:text;filter:drop-shadow(0 0 28px rgba(var(--rgb),.16))}.lead{max-width:670px;color:var(--soft);font-size:clamp(1.05rem,1.4vw,1.24rem);line-height:1.75}
-    .actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}.btn{min-height:50px;display:inline-flex;align-items:center;justify-content:center;gap:.65rem;padding:0 1.18rem;border:1px solid transparent;border-radius:999px;background:var(--accent);color:#06101a;text-decoration:none;font-size:.8rem;font-weight:950;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 15px 42px rgba(var(--rgb),.22);transition:.28s var(--ease)}.btn:hover,.btn:focus-visible{transform:translateY(-3px);background:var(--bright);box-shadow:0 20px 48px rgba(var(--rgb),.36);outline:0}.btn.secondary{color:#fff;background:rgba(13,20,31,.74);border-color:var(--line);box-shadow:none}.btn.secondary:hover,.btn.secondary:focus-visible{background:rgba(var(--rgb),.09);border-color:rgba(var(--rgb),.4)}.btn svg{width:18px}
-    .meta{display:flex;flex-wrap:wrap;gap:.6rem 1.15rem;margin:2.2rem 0 0;padding:0;list-style:none;color:var(--muted);font-size:.7rem;font-weight:850;letter-spacing:.12em;text-transform:uppercase}.meta li{display:flex;align-items:center;gap:.45rem}.meta li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px rgba(var(--rgb),.9)}
-
-    .logo-stage{position:relative;min-height:610px;display:grid;place-items:center;perspective:1100px}.ring,.ring::before,.ring::after{position:absolute;border:1px solid rgba(var(--rgb),.22);border-radius:50%;content:""}.ring{width:min(92%,560px);aspect-ratio:1;border-style:dashed;animation:orbit 30s linear infinite;box-shadow:inset 0 0 90px rgba(var(--rgb),.03),0 0 80px rgba(var(--rgb),.05)}.ring::before{inset:8%;border-color:rgba(255,255,255,.08)}.ring::after{inset:21%;border-style:dotted;animation:orbitBack 18s linear infinite}.cross{position:absolute;width:112%;height:112%;opacity:.25;background:linear-gradient(90deg,transparent calc(50% - .5px),rgba(var(--rgb),.35) 50%,transparent calc(50% + .5px)),linear-gradient(transparent calc(50% - .5px),rgba(var(--rgb),.35) 50%,transparent calc(50% + .5px));mask-image:radial-gradient(circle,#000 0 34%,transparent 70%)}
-    .lockup{position:relative;width:min(78%,420px);transform-style:preserve-3d;animation:breathe 6.5s ease-in-out infinite;filter:drop-shadow(0 28px 42px rgba(0,0,0,.75));transition:transform .16s ease}.lockup img{width:100%;filter:drop-shadow(0 0 28px rgba(var(--rgb),.18));transition:opacity .5s}.lockup .orange{position:absolute;inset:0;opacity:0}body[data-signal="orange"] .lockup .blue{opacity:0}body[data-signal="orange"] .lockup .orange{opacity:1}.label{position:absolute;padding:.48rem .72rem;border:1px solid var(--line);border-radius:999px;background:rgba(7,11,18,.78);color:var(--muted);font-size:.62rem;font-weight:900;letter-spacing:.13em;text-transform:uppercase;backdrop-filter:blur(12px)}.label::before{content:"";display:inline-block;width:6px;height:6px;margin-right:.5rem;border-radius:50%;background:var(--accent);box-shadow:0 0 10px rgba(var(--rgb),.9)}.label.a{top:17%;right:0}.label.b{left:0;bottom:15%}
-
-    .section{position:relative;padding:clamp(5.5rem,9vw,9.5rem) 0}.kicker{margin:0 0 .9rem}.title{max-width:900px;margin:0 0 1.2rem;font-size:clamp(2.2rem,4.6vw,4.8rem);line-height:1;letter-spacing:-.045em;font-weight:950;text-transform:uppercase}.copy{max-width:735px;color:var(--muted);font-size:1.04rem;line-height:1.82}
-    .mission{border-block:1px solid var(--line);background:linear-gradient(135deg,rgba(var(--rgb),.075),transparent 38%),rgba(8,12,19,.7);overflow:hidden}.mission::after{content:"FENRIR";position:absolute;right:-2rem;bottom:-3.5rem;color:rgba(255,255,255,.018);font-size:clamp(8rem,22vw,23rem);font-weight:950;letter-spacing:-.08em;line-height:.8}.mission-grid{position:relative;z-index:2;display:grid;grid-template-columns:.55fr 1.45fr;gap:clamp(2rem,6vw,7rem)}.mission-label{color:var(--muted);font-size:.73rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase}.mission-label::before{content:"01 // ";color:var(--accent)}.mission-text{margin:0;max-width:920px;font-size:clamp(1.72rem,3.35vw,3.62rem);line-height:1.18;letter-spacing:-.035em;font-weight:760}.mission-text strong{color:var(--bright)}
-
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:3rem}.card{position:relative;min-height:330px;padding:1.45rem;overflow:hidden;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(145deg,rgba(18,28,43,.77),rgba(8,12,19,.85));transition:.35s var(--ease)}.card:hover{transform:translateY(-7px);border-color:rgba(var(--rgb),.42);box-shadow:0 28px 70px rgba(0,0,0,.34)}.card::before{content:"";position:absolute;right:-65px;top:-65px;width:170px;height:170px;border:1px solid rgba(var(--rgb),.19);border-radius:50%;box-shadow:0 0 0 25px rgba(var(--rgb),.025),0 0 0 52px rgba(var(--rgb),.016)}.num{color:var(--accent);font:900 .72rem/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em}.card h3{margin:7rem 0 .65rem;font-size:1.42rem;letter-spacing:-.02em;text-transform:uppercase}.card p{margin:0;color:var(--muted);line-height:1.7}
-
-    .product{padding-top:2rem}.product-frame{display:grid;grid-template-columns:.82fr 1.18fr;min-height:580px;overflow:hidden;border:1px solid var(--line);border-radius:clamp(24px,4vw,42px);background:#090e16;box-shadow:0 50px 100px rgba(0,0,0,.42)}.product-copy{display:flex;flex-direction:column;justify-content:center;padding:clamp(2rem,5vw,4.7rem);background:radial-gradient(circle at 10% 15%,rgba(var(--rgb),.15),transparent 16rem),linear-gradient(135deg,#0d1521,#080d14 72%)}.tag{align-self:flex-start;margin-bottom:1.2rem;padding:.42rem .68rem;border:1px solid rgba(var(--rgb),.3);border-radius:999px;color:var(--bright);background:rgba(var(--rgb),.07);font-size:.65rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase}.product-copy h2{margin:0 0 1rem;font-size:clamp(2.2rem,4.6vw,4.55rem);line-height:.97;letter-spacing:-.05em;text-transform:uppercase}.product-copy p{color:var(--muted);line-height:1.78}.product-copy .btn{align-self:flex-start;margin-top:1rem}.visual{position:relative;overflow:hidden;min-height:440px;background:#0c1520}.visual::before{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,#080d14 0,transparent 16%),linear-gradient(0deg,rgba(5,7,12,.25),transparent 40%);pointer-events:none}.visual img{width:100%;height:100%;object-fit:cover;object-position:48% center;transform:scale(1.04);filter:saturate(.86) contrast(1.05) brightness(.86);transition:.8s var(--ease)}.product-frame:hover .visual img{transform:scale(1.085);filter:saturate(1) contrast(1.04) brightness(.95)}
-
-    .principles{display:grid;grid-template-columns:1fr 1.35fr;gap:clamp(2rem,7vw,8rem)}.list{border-top:1px solid var(--line)}.principle{display:grid;grid-template-columns:3rem 1fr;gap:1rem;padding:1.45rem 0;border-bottom:1px solid var(--line)}.principle>span{color:var(--accent);font:900 .72rem/1.5 ui-monospace,SFMono-Regular,Menlo,monospace}.principle h3{margin:0 0 .35rem;font-size:1.1rem;letter-spacing:.02em;text-transform:uppercase}.principle p{margin:0;color:var(--muted);line-height:1.65}
-    .impact{position:relative;overflow:hidden;padding:clamp(2rem,5vw,4.8rem);border:1px solid var(--line);border-radius:clamp(24px,4vw,42px);background:radial-gradient(circle at 85% 30%,rgba(255,121,38,.16),transparent 24rem),linear-gradient(120deg,#111722,#0a0e15 65%)}.impact::before{content:"";position:absolute;right:-5rem;bottom:-8rem;width:34rem;height:34rem;border:1px solid rgba(255,121,38,.17);border-radius:50%;box-shadow:0 0 0 54px rgba(255,121,38,.025),0 0 0 108px rgba(255,121,38,.015)}.impact>*{position:relative;z-index:2}.impact .kicker{color:#ffad70}
-    .contact{text-align:center;padding-bottom:clamp(6rem,10vw,10rem)}.contact-box{position:relative;overflow:hidden;padding:clamp(3.2rem,8vw,7rem) 1.5rem;border:1px solid var(--line);border-radius:clamp(24px,5vw,52px);background:radial-gradient(circle at 50% 10%,rgba(var(--rgb),.16),transparent 30rem),linear-gradient(180deg,#101824,#080d14)}.contact-box::after{content:"";position:absolute;inset:0;opacity:.3;background-image:linear-gradient(rgba(var(--rgb),.08) 1px,transparent 1px),linear-gradient(90deg,rgba(var(--rgb),.08) 1px,transparent 1px);background-size:42px 42px;mask-image:radial-gradient(circle,#000,transparent 65%)}.contact-box>*{position:relative;z-index:2}.contact .title,.contact .copy{margin-left:auto;margin-right:auto}.contact .btn{margin-top:1.4rem}
-    footer{border-top:1px solid var(--line);background:rgba(3,5,9,.72)}.footer{min-height:170px;display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center}.footer-brand{display:flex;align-items:center;gap:1rem}.footer-brand img{width:64px;height:64px;object-fit:contain}.footer-brand strong{display:block;letter-spacing:.12em}.footer-brand span{display:block;margin-top:.3rem;color:var(--muted);font-size:.8rem}.legal{text-align:right;color:var(--muted);font-size:.77rem;line-height:1.72}.legal a{color:var(--soft);text-underline-offset:.2em}
-    .reveal{opacity:0;transform:translateY(30px);transition:opacity .85s var(--ease),transform .85s var(--ease)}.reveal.show{opacity:1;transform:none}.reveal[data-delay="1"]{transition-delay:.08s}.reveal[data-delay="2"]{transition-delay:.16s}.reveal[data-delay="3"]{transition-delay:.24s}
-    @keyframes orbit{to{transform:rotate(360deg)}}@keyframes orbitBack{to{transform:rotate(-360deg)}}@keyframes breathe{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
-
-    @media(max-width:1040px){nav{position:absolute;top:calc(100% + .5rem);left:1rem;right:1rem;display:none;padding:.55rem;border-radius:18px;background:rgba(7,10,17,.97);backdrop-filter:blur(20px);flex-direction:column}nav.open{display:flex}nav a{text-align:center;padding:.8rem;border-radius:12px}.menu{display:grid}.signal span:last-child{display:none}.signal{width:44px;justify-content:center;padding:0}.hero-grid{grid-template-columns:1fr;text-align:center}.lead{margin:auto}.actions,.meta,.eyebrow{justify-content:center}.logo-stage{min-height:510px;margin-top:-1rem}.lockup{width:min(64vw,370px)}.label.a{right:7%}.label.b{left:7%}.mission-grid,.principles{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.card:last-child{grid-column:1/-1;min-height:260px}.card:last-child h3{margin-top:4.5rem}.product-frame{grid-template-columns:1fr}.product-copy{min-height:430px}.visual{min-height:480px}}
-    @media(max-width:700px){.shell{width:min(calc(100% - 1.2rem),var(--max))}.nav{min-height:68px}.brand{font-size:.75rem;letter-spacing:.1em}.brand-icon{width:38px;height:38px}.hero{padding-top:7rem}.hero h1{font-size:clamp(3rem,16vw,5rem)}.actions{flex-direction:column}.actions .btn{width:100%}.logo-stage{min-height:430px}.lockup{width:min(76vw,330px)}.label{display:none}.section{padding:5.2rem 0}.mission-text{font-size:clamp(1.65rem,7.5vw,2.45rem)}.cards{grid-template-columns:1fr}.card,.card:last-child{grid-column:auto;min-height:280px}.card h3,.card:last-child h3{margin-top:5.5rem}.product-copy{min-height:auto;padding:2rem 1.2rem 2.3rem}.visual{min-height:315px}.principle{grid-template-columns:2.3rem 1fr}.footer{grid-template-columns:1fr;padding:2rem 0}.legal{text-align:left}.footer-brand img{width:52px;height:52px}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}#field{display:none}.reveal{opacity:1;transform:none}}
-  </style>
+  <meta property="og:image" content="https://botdhockey.com/assets/fenrir-logo-blue.png">
+  <link rel="icon" href="/assets/favicon.png" type="image/png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/assets/site.css">
+  <script src="/assets/site.js" defer></script>
 </head>
 <body data-signal="blue">
-  <a class="skip" href="#main">Skip to content</a>
-  <canvas id="field" aria-hidden="true"></canvas><div class="grain" aria-hidden="true"></div>
-  <header id="header"><div class="shell nav">
-    <a class="brand" href="#top" aria-label="FENRIR LLC home"><span class="brand-icon" aria-hidden="true"><img class="blue" src="assets/fenrir-crest-blue.png" alt=""><img class="orange" src="assets/fenrir-crest-orange.png" alt=""></span><span>FENRIR LLC</span></a>
-    <nav id="nav" aria-label="Primary"><a href="#mission">Mission</a><a href="#work">Work</a><a href="#principles">Principles</a><a href="#contact">Contact</a></nav>
-    <div class="nav-actions"><button class="signal" id="signal" type="button" aria-label="Switch color signal" aria-pressed="false"><span class="dot"></span><span id="signalText">Signal: Blue</span></button><button class="menu" id="menu" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></div>
-  </div></header>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/" aria-label="FENRIR LLC home">
+      <img src="/assets/favicon.png" alt="">
+      <span>FENRIR LLC</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle aria-label="Open navigation">☰</button>
+    <nav class="site-nav" id="site-nav" data-nav aria-label="Primary navigation">
+      <a href="#mission">Mission</a>
+      <a href="#work">Work</a>
+      <a href="#principles">Principles</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <main id="main">
-    <section class="hero" id="top"><div class="shell hero-grid">
-      <div class="reveal show"><p class="eyebrow">Independent product company</p><h1>Forge what’s <span>next.</span></h1><p class="lead">FENRIR LLC builds focused software and durable digital systems for people who lead, teach, and create. Born in Washington. Built for anywhere.</p><div class="actions"><a class="btn" href="#mission">Read the mission <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn secondary" href="https://edw00rd.github.io/hockey-coaching-aid/" target="_blank" rel="noopener noreferrer">Explore B.O.T.D. <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 5h5v5M10 14 19 5M19 14v5H5V5h5"/></svg></a></div><ul class="meta"><li>Veteran-founded</li><li>Washington-built</li><li>Purpose-driven</li></ul></div>
-      <div class="logo-stage reveal show" id="stage" aria-label="Official FENRIR LLC logo"><div class="ring" aria-hidden="true"></div><div class="cross" aria-hidden="true"></div><div class="lockup" id="lockup"><img class="blue" src="assets/fenrir-blue.png" alt="FENRIR LLC geometric wolf logo in blue, silver, and black"><img class="orange" src="assets/fenrir-orange.png" alt="" aria-hidden="true"></div><span class="label a">Signal acquired</span><span class="label b">Built with intent</span></div>
-    </div></section>
+<main id="main">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Independent company · Washington</p>
+        <h1>Build with <span class="gradient-word">teeth.</span><br>Lead with purpose.</h1>
+        <p class="lead">FENRIR creates durable digital products for people who need clarity, control, and the confidence to act.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#work">Explore our work</a>
+          <a class="btn btn-ghost" href="mailto:fenrir@botdhockey.com">Contact FENRIR</a>
+        </div>
+      </div>
+      <div class="logo-stage reveal" aria-label="FENRIR logo presentation">
+        <span class="flare" aria-hidden="true"></span>
+        <img src="/assets/fenrir-logo-blue.png" alt="FENRIR LLC geometric wolf logo" data-hero-logo>
+        <div class="signal-switch" aria-label="Logo signal color">
+          <button type="button" aria-pressed="true" data-signal-button="blue">Blue</button>
+          <button type="button" aria-pressed="false" data-signal-button="orange">Orange</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section class="section mission" id="mission"><div class="shell mission-grid"><p class="mission-label reveal">Mission statement</p><p class="mission-text reveal" data-delay="1">FENRIR LLC builds <strong>bold, durable digital products</strong> that turn complex ideas into clear action. We create with discipline, serve with integrity, and use responsible growth to strengthen the communities and wild places that make the future worth building.</p></div></section>
+  <section class="section" id="mission">
+    <div class="container">
+      <p class="eyebrow reveal">Mission</p>
+      <div class="mission-panel reveal">
+        <blockquote>FENRIR LLC builds bold, durable digital products that turn complex ideas into clear action. We create with discipline, serve with integrity, and use responsible growth to strengthen the communities and wild places that make the future worth building.</blockquote>
+      </div>
+    </div>
+  </section>
 
-    <section class="section"><div class="shell"><p class="kicker reveal">What we build</p><h2 class="title reveal">Hard problems. Clean systems. Zero wasted motion.</h2><p class="copy reveal">FENRIR exists to turn demanding workflows into tools that feel direct, capable, and inevitable.</p><div class="cards"><article class="card reveal" data-delay="1"><span class="num">01 // PRODUCTS</span><h3>Useful by design</h3><p>Focused software built around real work—not feature lists, friction, or empty spectacle.</p></article><article class="card reveal" data-delay="2"><span class="num">02 // SYSTEMS</span><h3>Clarity at speed</h3><p>Interfaces and workflows that make complex actions understandable, editable, and repeatable.</p></article><article class="card reveal" data-delay="3"><span class="num">03 // PURPOSE</span><h3>Growth that matters</h3><p>A company built to create value, act with integrity, and leave something worthwhile behind.</p></article></div></div></section>
+  <section class="section" id="principles">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Operating principles</p>
+        <h2>Strength without noise.</h2>
+        <p class="section-copy">The work should feel powerful because it is useful—not because it is complicated.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card reveal"><span class="number">01 / DISCIPLINE</span><h3>Make complexity legible.</h3><p>Reduce friction, expose the right controls at the right moment, and protect the user’s focus.</p></article>
+        <article class="card reveal"><span class="number">02 / INTEGRITY</span><h3>Build what we can stand behind.</h3><p>Favor clear promises, honest limits, durable systems, and respect for the people whose data we touch.</p></article>
+        <article class="card reveal"><span class="number">03 / RANGE</span><h3>Leave room to grow.</h3><p>Create products that can evolve beyond their first use without losing the clarity that made them valuable.</p></article>
+      </div>
+    </div>
+  </section>
 
-    <section class="section product" id="work"><div class="shell product-frame reveal"><div class="product-copy"><span class="tag">Flagship product</span><h2>B.O.T.D. Hockey Coaching Aid</h2><p>A rink-first timeline director that lets coaches build, edit, animate, and replay every player route and puck action—then show exactly how a play develops.</p><a class="btn" href="https://edw00rd.github.io/hockey-coaching-aid/" target="_blank" rel="noopener noreferrer">Open the coaching aid <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 5h5v5M10 14 19 5M19 14v5H5V5h5"/></svg></a></div><div class="visual" aria-hidden="true"><img src="assets/botd-preview.webp" alt="" loading="lazy"></div></div></section>
+  <section class="section" id="work">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Flagship product</p>
+        <h2>B.O.T.D. Hockey Coaching Aid</h2>
+      </div>
+      <article class="product-card reveal">
+        <div class="product-art"><img src="/assets/botd-dog-tag.png" alt="B.O.T.D. dog-tag product emblem"></div>
+        <div>
+          <h3>Turn the whiteboard into a timeline.</h3>
+          <p>B.O.T.D. gives hockey coaches a rink-first workspace for mapping every player’s route, directing passes and shots, editing timing, and replaying the complete sequence.</p>
+          <div class="pill-row" aria-label="Product capabilities">
+            <span class="pill">Independent player timelines</span>
+            <span class="pill">Puck routes</span>
+            <span class="pill">Telestration</span>
+            <span class="pill">Full & half ice</span>
+          </div>
+          <a class="btn btn-primary" href="https://edw00rd.github.io/hockey-coaching-aid/" rel="noopener">Open B.O.T.D.</a>
+        </div>
+      </article>
+    </div>
+  </section>
 
-    <section class="section" id="principles"><div class="shell principles"><div><p class="kicker reveal">Operating code</p><h2 class="title reveal">The standard is the standard.</h2><p class="copy reveal">FENRIR is built around a few rules that do not change when the work gets difficult.</p></div><div class="list reveal" data-delay="1"><article class="principle"><span>01</span><div><h3>Clarity is power</h3><p>Make the important thing obvious. Remove what does not serve it.</p></div></article><article class="principle"><span>02</span><div><h3>Own the work</h3><p>Build carefully, test honestly, and take responsibility for the result.</p></div></article><article class="principle"><span>03</span><div><h3>Durability over noise</h3><p>Create products that earn trust through usefulness—not hype.</p></div></article><article class="principle"><span>04</span><div><h3>Range beyond revenue</h3><p>Use growth to strengthen people, communities, and the land that sustains them.</p></div></article></div></div></section>
+  <section class="section">
+    <div class="container statement reveal">
+      <strong>Responsible growth</strong>
+      <p>FENRIR is built to create more than software. As the company grows, part of that growth will be directed toward stronger communities and the conservation of land and wild places.</p>
+    </div>
+  </section>
 
-    <section class="section"><div class="shell impact reveal"><p class="kicker">Purpose beyond the product</p><h2 class="title">Build boldly. Protect what endures.</h2><p class="copy">FENRIR is a for-profit company with a long view. As the company grows, we intend to direct part of that success toward land conservation and the protection of wild places—because a better future should exist beyond the screen.</p></div></section>
+  <section class="section" id="contact">
+    <div class="container contact-panel reveal">
+      <div><p class="eyebrow">Contact</p><h2>Ready to build?</h2><p>Product questions, partnerships, and customer support begin here.</p></div>
+      <a class="btn btn-primary" href="mailto:fenrir@botdhockey.com">fenrir@botdhockey.com</a>
+    </div>
+  </section>
+</main>
 
-    <section class="section contact" id="contact"><div class="shell contact-box reveal"><p class="kicker">Open channel</p><h2 class="title">Have a hard problem worth solving?</h2><p class="copy">FENRIR is building from the Pacific Northwest and looking toward what comes next.</p><a class="btn" href="mailto:support@botdhockey.com?subject=FENRIR%20LLC%20Inquiry">Contact FENRIR <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4zM4 6l8 7 8-7"/></svg></a></div></section>
-  </main>
-
-  <footer><div class="shell footer"><div class="footer-brand"><img src="assets/fenrir-crest-blue.png" alt="FENRIR LLC wolf crest"><div><strong>FENRIR LLC</strong><span>Veteran-founded in Washington State.</span></div></div><div class="legal"><div>© <span id="year">2026</span> FENRIR LLC. All rights reserved.</div><div>B.O.T.D. Hockey Coaching Aid is a product of FENRIR LLC.</div><div><a href="mailto:support@botdhockey.com">support@botdhockey.com</a></div></div></div></footer>
-
-  <script>
-  (()=>{const body=document.body,header=document.getElementById('header'),signal=document.getElementById('signal'),signalText=document.getElementById('signalText'),menu=document.getElementById('menu'),nav=document.getElementById('nav'),stage=document.getElementById('stage'),lockup=document.getElementById('lockup'),reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;document.getElementById('year').textContent=new Date().getFullYear();const headerState=()=>header.classList.toggle('scrolled',scrollY>18);headerState();addEventListener('scroll',headerState,{passive:true});signal.addEventListener('click',()=>{const orange=body.dataset.signal!=='orange';body.dataset.signal=orange?'orange':'blue';signal.setAttribute('aria-pressed',String(orange));signalText.textContent=orange?'Signal: Orange':'Signal: Blue'});menu.addEventListener('click',()=>{const open=!nav.classList.contains('open');nav.classList.toggle('open',open);menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Close navigation':'Open navigation')});nav.addEventListener('click',e=>{if(e.target.closest('a')){nav.classList.remove('open');menu.setAttribute('aria-expanded','false')}});const reveals=document.querySelectorAll('.reveal:not(.show)');if('IntersectionObserver'in window&&!reduced){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -5%'});reveals.forEach(e=>io.observe(e))}else reveals.forEach(e=>e.classList.add('show'));if(!reduced&&matchMedia('(pointer:fine)').matches){stage.addEventListener('pointermove',e=>{const r=stage.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;lockup.style.transform=`translateY(-6px) rotateX(${-y*7}deg) rotateY(${x*9}deg)`});stage.addEventListener('pointerleave',()=>lockup.style.transform='')}
-  if(!reduced){const c=document.getElementById('field'),x=c.getContext('2d'),p={x:-9999,y:-9999};let w,h,d,n=[];const resize=()=>{d=Math.min(devicePixelRatio||1,1.75);w=innerWidth;h=innerHeight;c.width=w*d;c.height=h*d;c.style.width=w+'px';c.style.height=h+'px';x.setTransform(d,0,0,d,0,0);const count=Math.min(76,Math.max(30,Math.floor(w*h/27000)));n=Array.from({length:count},()=>({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.12,vy:(Math.random()-.5)*.12,r:Math.random()*1.2+.35}))};addEventListener('resize',resize,{passive:true});addEventListener('pointermove',e=>{p.x=e.clientX;p.y=e.clientY},{passive:true});resize();const frame=()=>{x.clearRect(0,0,w,h);const rgb=body.dataset.signal==='orange'?[255,121,38]:[87,184,255];for(let i=0;i<n.length;i++){const a=n[i];a.x+=a.vx;a.y+=a.vy;if(a.x<-8)a.x=w+8;if(a.x>w+8)a.x=-8;if(a.y<-8)a.y=h+8;if(a.y>h+8)a.y=-8;const pd=Math.hypot(a.x-p.x,a.y-p.y),pulse=pd<170?(1-pd/170)*.55:0;x.beginPath();x.arc(a.x,a.y,a.r+pulse*1.5,0,Math.PI*2);x.fillStyle=`rgba(${rgb[0]},${rgb[1]},${rgb[2]},${.18+pulse})`;x.fill();for(let j=i+1;j<n.length;j++){const b=n[j],dist=Math.hypot(a.x-b.x,a.y-b.y);if(dist<125){x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.strokeStyle=`rgba(${rgb[0]},${rgb[1]},${rgb[2]},${(1-dist/125)*.055})`;x.lineWidth=.6;x.stroke()}}}requestAnimationFrame(frame)};requestAnimationFrame(frame)}})();
-  </script>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>FENRIR LLC</strong>
+      <p class="footer-small">B.O.T.D. Hockey Coaching Aid is a product of FENRIR LLC, a Washington limited liability company.</p>
+      <p class="footer-small">© <span data-year></span> FENRIR LLC. All rights reserved.</p>
+    </div>
+    <nav class="footer-links" aria-label="Legal">
+      <a href="/terms/">Terms</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/refunds/">Refunds & cancellation</a>
+      <a href="mailto:fenrir@botdhockey.com">Support</a>
+    </nav>
+  </div>
+</footer>
 </body>
 </html>

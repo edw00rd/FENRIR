@@ -1,1 +1,11 @@
-{"name":"FENRIR LLC","short_name":"FENRIR","description":"FENRIR LLC builds bold, durable digital products from the Pacific Northwest.","start_url":"./","display":"standalone","background_color":"#05070c","theme_color":"#05070c","icons":[{"src":"assets/fenrir-crest-blue.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}]}
+{
+  "name": "FENRIR LLC",
+  "short_name": "FENRIR",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#05080c",
+  "theme_color": "#05080c",
+  "icons": [
+    {"src": "/assets/favicon.png", "sizes": "512x512", "type": "image/png"}
+  ]
+}

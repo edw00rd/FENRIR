@@ -1,30 +1,53 @@
-FENRIR LLC HOMEPAGE
-===================
+FENRIR LLC WEBSITE + PRODUCT POLICY PAGES
+=========================================
 
-GitHub Pages deployment package for:
-  https://github.com/edw00rd/FENRIR
+Included routes
+---------------
+/
+/terms/
+/privacy/
+/refunds/
 
-Deploy
-------
-1. Upload every root file and the complete assets folder to the repository root.
-2. Open GitHub Settings > Pages.
-3. Select Deploy from a branch, then main and / (root).
-4. The included CNAME file requests botdhockey.com.
-5. Configure the domain DNS for GitHub Pages.
-6. Enable Enforce HTTPS when GitHub finishes issuing the certificate.
+Deployment to GitHub Pages
+--------------------------
+1. Download and extract the ZIP.
+2. Upload the extracted contents directly to the root of edw00rd/FENRIR.
+3. Preserve the assets, terms, privacy, and refunds folders.
+4. Commit the changes to main.
+5. GitHub Pages should remain configured as main / (root).
+6. Confirm that CNAME contains only: botdhockey.com
+7. Test all four URLs over HTTPS.
 
-Important
----------
-- Never add EINs, banking details, Stripe secrets, API keys, or private records.
-- The official FENRIR logo assets are included locally.
-- The B.O.T.D. button currently links to:
-    https://edw00rd.github.io/hockey-coaching-aid/
-- Public contact address:
-    support@botdhockey.com
+Important customization
+-----------------------
+The pages currently use fenrir@botdhockey.com as the contact address.
+Update that address in all HTML files if a different support address should be used.
 
-Mission Statement
------------------
-FENRIR LLC builds bold, durable digital products that turn complex ideas into
-clear action. We create with discipline, serve with integrity, and use
-responsible growth to strengthen the communities and wild places that make the
-future worth building.
+The public policies are tailored launch drafts based on the current B.O.T.D.
+subscription plan discussed with FENRIR LLC. They are not a substitute for review
+by a qualified attorney familiar with Washington law, SaaS subscriptions, privacy,
+youth-player data, and the jurisdictions where the product will be sold.
+
+The current Privacy Policy states that much of the coaching application may store
+content locally in the browser. Update the policy before launching cloud storage,
+user accounts, analytics, advertising, or materially different data practices.
+
+Files
+-----
+index.html
+terms/index.html
+privacy/index.html
+refunds/index.html
+assets/site.css
+assets/site.js
+assets/fenrir-logo-blue.png
+assets/fenrir-logo-orange.png
+assets/fenrir-logo-grayscale.png
+assets/botd-dog-tag.png
+assets/favicon.png
+CNAME
+.nojekyll
+robots.txt
+sitemap.xml
+site.webmanifest
+README.txt
