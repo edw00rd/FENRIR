@@ -1,5 +1,15 @@
 B.O.T.D. Hockey Playbook Studio v6.8
-Creator: Nicholas Heller
+Owner and copyright holder: FENRIR LLC
+License: Proprietary software - all rights reserved
+Application: https://app.botdhockey.com/
+Terms: https://botdhockey.com/terms/
+Support: support@botdhockey.com
+
+Ownership and licensing
+-----------------------
+Copyright © 2026 FENRIR LLC. All rights reserved.
+
+The application, source code, interface, artwork, and documentation in this release are proprietary to FENRIR LLC. No open-source or source-code license is granted. Authorized end-user access is governed by the B.O.T.D. Terms of Service and LICENSE.txt included with this release.
 
 Release focus
 -------------
@@ -75,17 +85,18 @@ The migration updates the standard playbook name from "BOTD Playbook v6.7" to "B
 
 GitHub Pages installation
 -------------------------
-This domain-ready release ZIP contains exactly five root files:
+This domain-ready proprietary release ZIP contains exactly six root files:
 
   index.html
   README.txt
   Preview.png
+  LICENSE.txt
   .nojekyll
   CNAME
 
 To publish:
 1. Extract the ZIP.
-2. Place all five files directly in the hockey-coaching-aid repository root or selected GitHub Pages publishing folder.
+2. Place all six files directly in the hockey-coaching-aid repository root or selected GitHub Pages publishing folder.
 3. Commit and push the files.
 4. Configure GitHub Pages for app.botdhockey.com, then open https://app.botdhockey.com/ after deployment and certificate provisioning finish.
 
@@ -107,6 +118,6 @@ Validation performed
 - Verification that Glow/Blink does not extend the real action endpoint.
 - Runtime and browser-console error checks.
 - Responsive page-overflow checks at 1920 x 1080, 1366 x 1024, 1024 x 768, 820 x 1180, 768 x 1024, and 390 x 844.
-- ZIP compressed-data integrity and the original four-file release root structure; this domain-ready package adds only CNAME and branding text/image updates.
+- ZIP compressed-data integrity and the six-file proprietary release root structure, including CNAME and LICENSE.txt.
 
 Physical iPad and Apple Pencil hardware were not available for this release validation. Touch-sized controls and responsive tablet layouts were exercised through Chromium emulation.

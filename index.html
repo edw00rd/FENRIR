@@ -1,17 +1,26 @@
 <!doctype html>
 <!--
-  BOTD Hockey Coaching Aid
-  Creator: Nicholas Heller
-  Version: 6.3
-  Release architecture: rink-first floating controls, independent player route editing, ordered team benches, reusable play options, and camera-based Half Ice.
+B.O.T.D. Hockey Playbook Studio v6.8
+Copyright © 2026 FENRIR LLC. All rights reserved.
+
+This software, source code, interface, artwork, and documentation are
+proprietary to FENRIR LLC. No source-code license is granted except as
+expressly provided in the B.O.T.D. Terms of Service and LICENSE.txt.
+
+Terms: https://botdhockey.com/terms/
+Support: support@botdhockey.com
 -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
 <meta id="themeColorMeta" name="theme-color" content="#F3F7FB">
-<meta name="author" content="Nicholas Heller">
-<title>BOTD Hockey Coaching Aid v6.8</title>
+<meta name="author" content="FENRIR LLC">
+<meta name="copyright" content="Copyright 2026 FENRIR LLC">
+<meta name="application-name" content="B.O.T.D. Hockey Playbook Studio">
+<meta name="description" content="B.O.T.D. Hockey Playbook Studio for creating, animating, saving, and sharing hockey plays and drills.">
+<link rel="license" href="LICENSE.txt">
+<title>B.O.T.D. Hockey Playbook Studio v6.8</title>
 <link rel="icon" href="data:,">
 <style>
 :root{
@@ -721,6 +730,9 @@ body.theme-light .v63-glow-clip{color:#071827;border-color:color-mix(in srgb,var
 body.theme-light .v63-telestration-clip{border-color:rgba(10,35,55,.45)}
 @media(max-width:900px){.v63-telestration-toggle strong{display:none}.v63-telestration-toggle{padding:4px 7px}.v63-telestration-toggle small{font-size:8px}.v63-glow-time{display:none}}
 @media(prefers-reduced-motion:reduce){.v63-glow-clip{box-shadow:none}}
+
+.ownership-card a{color:var(--cyan);font-weight:700;text-decoration:none}
+.ownership-card a:hover,.ownership-card a:focus-visible{text-decoration:underline}
 </style>
 
 <style id="v64Styles">
@@ -810,6 +822,7 @@ body.theme-light .puck-event.v65-puck-action-clip{
         <div class="section-card appearance-card"><h3>Appearance &amp; Language</h3><p class="help">Use a large, USA Hockey-inspired light workspace or a low-glare dark workspace. Language changes are stored on this device.</p><div class="theme-choice" role="group" aria-label="Theme"><button class="btn small primary" id="themeLightBtn" type="button">Light</button><button class="btn small" id="themeDarkBtn" type="button">Dark</button></div><div class="field"><span>Language</span><select id="languageSelect"><option value="en-US">US English</option><option value="en-CA">Canadian English</option><option value="sv">Swedish</option><option value="fi">Finnish</option><option value="ru">Russian</option></select></div><p class="help canadian-note" id="canadianNote" hidden>Canadian English adds a little “eh” and places a maple leaf at center ice.</p></div>
         <div class="section-card"><h3>Token Display</h3><label class="check-row"><span>Names</span><input id="showNames" type="checkbox"></label><label class="check-row"><span>Numbers</span><input id="showNumbers" type="checkbox" checked></label><label class="check-row"><span>Positions</span><input id="showPositions" type="checkbox" checked></label><label class="check-row"><span>Leadership</span><input id="showLeadership" type="checkbox"></label><label class="check-row"><span>Offside light</span><input id="showOffside" type="checkbox" checked></label></div>
         <div class="section-card"><h3>Center-Ice Logo</h3><p class="help">Half Ice rotates and crops the image to the visible half of center ice.</p><input class="file-input" id="centerLogoInput" type="file" accept="image/*"><div class="field"><span>Opacity</span><input id="logoOpacity" type="range" min="0" max="1" value="0.32" step="0.02"></div><button class="btn small" id="resetCenterLogoBtn">Use BOTD default</button></div>
+        <div class="section-card ownership-card"><h3>Ownership &amp; License</h3><p class="help">© 2026 FENRIR LLC. All rights reserved. B.O.T.D. Hockey Playbook Studio is proprietary software.</p><p class="help"><a href="https://botdhockey.com/terms/" target="_blank" rel="noopener noreferrer">Terms of Service</a> · <a href="./LICENSE.txt" target="_blank" rel="noopener noreferrer">Software License</a></p></div>
         <div class="settings-compat-controls" hidden aria-hidden="true"><input id="showRoutes" type="checkbox" checked tabindex="-1"><select id="routeMode" tabindex="-1"><option value="ahead">Ahead; erase behind</option><option value="full">Show all</option><option value="off">Hidden</option></select><input id="durationSetting" type="number" min="4" max="60" step="1" value="12" tabindex="-1"></div>
       </section>
       <section class="tab-panel" id="tab-playbook">
