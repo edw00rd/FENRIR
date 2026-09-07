@@ -1,3 +1,8 @@
+/*
+  B.O.T.D. Hockey Playbook Studio sales website
+  Copyright © 2026 FENRIR LLC. All rights reserved.
+  Proprietary materials. See LICENSE.txt and https://botdhockey.com/terms/.
+*/
 (() => {
   "use strict";
 

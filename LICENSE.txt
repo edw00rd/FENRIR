@@ -1,0 +1,34 @@
+B.O.T.D. HOCKEY PLAYBOOK STUDIO SALES WEBSITE
+PROPRIETARY NOTICE AND LICENSE
+
+Copyright © 2026 FENRIR LLC. All rights reserved.
+
+The website source code, layouts, visual design, graphics, written copy,
+documentation, and other materials included with this repository or deployment
+(collectively, the “Materials”) are proprietary to FENRIR LLC and are protected
+by copyright, trademark, and other applicable laws.
+
+NO OPEN-SOURCE LICENSE IS GRANTED.
+
+Permission is granted only to access and view the publicly deployed website and,
+where applicable, to use the B.O.T.D. Hockey Playbook Studio service under the
+Terms of Service available at:
+
+https://botdhockey.com/terms/
+
+Except where applicable law does not permit a restriction, and unless FENRIR LLC
+provides prior written authorization, you may not copy, modify, adapt, translate,
+distribute, sublicense, sell, publish, host, mirror, scrape, reverse engineer,
+remove ownership notices from, or create derivative works from the Materials.
+No right, title, or interest in the Materials is transferred by publication,
+access, purchase, or use of the website.
+
+Customer-created content is governed by the Terms of Service. Third-party names,
+marks, services, and materials remain the property of their respective owners.
+
+THE MATERIALS ARE PROVIDED “AS IS” TO THE MAXIMUM EXTENT PERMITTED BY LAW,
+WITHOUT WARRANTIES OF ANY KIND. FENRIR LLC WILL NOT BE LIABLE FOR UNAUTHORIZED
+USE, COPYING, MODIFICATION, OR DISTRIBUTION OF THE MATERIALS.
+
+Licensing inquiries:
+support@botdhockey.com
