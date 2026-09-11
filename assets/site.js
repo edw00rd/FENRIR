@@ -63,16 +63,25 @@
     if (config.checkoutUrl) node.href = config.checkoutUrl;
   });
 
-  const checkoutMode = config.checkoutMode === "live" ? "live" : "sandbox";
+  const checkoutMode = config.checkoutMode === "account"
+    ? "account"
+    : config.checkoutMode === "live"
+      ? "live"
+      : "sandbox";
+  const liveCheckout = checkoutMode !== "sandbox";
   document.documentElement.dataset.checkoutEnvironment = checkoutMode;
   document.querySelectorAll("[data-checkout-mode]").forEach((node) => {
-    node.textContent = checkoutMode === "live" ? "Secure Stripe checkout" : "Stripe sandbox checkout";
+    node.textContent = checkoutMode === "account"
+      ? "Secure account-first checkout"
+      : checkoutMode === "live"
+        ? "Secure Stripe checkout"
+        : "Stripe sandbox checkout";
   });
   document.querySelectorAll("[data-sandbox-only]").forEach((node) => {
-    node.hidden = checkoutMode === "live";
+    node.hidden = liveCheckout;
   });
   document.querySelectorAll("[data-live-only]").forEach((node) => {
-    node.hidden = checkoutMode !== "live";
+    node.hidden = !liveCheckout;
   });
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;

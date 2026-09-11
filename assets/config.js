@@ -4,16 +4,17 @@
   Proprietary materials. See LICENSE.txt and https://botdhockey.com/terms/.
 */
 /*
-  B.O.T.D. site configuration.
-  Coach Pro uses one feature set with monthly and annual billing options.
+  Account-first production routing. Stripe Checkout is created only after the
+  customer signs into the protected application.
 */
 window.BOTD_SITE_CONFIG = Object.freeze({
-  checkoutUrl: "https://buy.stripe.com/00w7sEdVwgRf50ldnx0x201",
+  checkoutUrl: "https://app.botdhockey.com/?action=signup&plan=annual",
   checkoutUrls: Object.freeze({
-    annual: "https://buy.stripe.com/00w7sEdVwgRf50ldnx0x201",
-    monthly: "https://buy.stripe.com/4gMeV618KbwVcsNgzJ0x202"
+    annual: "https://app.botdhockey.com/?action=signup&plan=annual",
+    monthly: "https://app.botdhockey.com/?action=signup&plan=monthly"
   }),
-  checkoutMode: "live",
-  appUrl: "https://app.botdhockey.com/",
+  checkoutMode: "account",
+  appUrl: "https://app.botdhockey.com/?action=signin",
+  appBaseUrl: "https://app.botdhockey.com/",
   supportEmail: "support@botdhockey.com"
 });
